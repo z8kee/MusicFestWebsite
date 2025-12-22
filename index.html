@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Title of home page-->
+    <title>
+        Home
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Name of external style sheet-->
+</head>
+<body>
+    <header>
+        <img src="pictures/black-texture.jpg" class="bg-image"> <!--Image for bg, styled by styles.css-->
+        <h1>MusicFest</h1>
+        <h2>2025</h2>
+        <h5>AND MANY MORE---</h5>
+        <h6>LEICESTER || UK || July 15th - July 17th</h6>
+        <h7>Your opportunity to experience the <strong> MusicFest</strong> Mayhem <br>
+        Unlock your experience in this once in a lifetime event: </h7>
+
+        <div class="list"> <!--Persuasive advertisement formatted into a list, styled by styles.css-->
+            <ul> <!--Unordered list-->
+                <li>🔥 No Late Fees</li>
+                <li>🤩 Exclusive Student Discounts</li>
+                <li>🤤 High End Artists + More</li>
+                <li>🎟️Get your General Admissions for £39.99</li>
+            </ul>
+        </div>
+
+        <div class="solid-box"> <!--Solid box with gradient and glow text, styled by styles.css-->
+            <h3>Concerts were never meant to be normal.<br> <!--br used to stop text from going out of solid box area-->
+                THE LINEUP WILL BE GENERATIONAL, ON FOENEM. <br>
+                Only in Leicester, where the jambazzment will be jambazzing. <br>
+                A one in a lifetime experience, do not miss it.</h3>
+        </div>
+
+        <div class="topfade-solid-box"></div> <!--Used for effect, allows for a black gradient to flow as you scroll down the page-->
+
+        <div class="phone"> <!--Used for design-->
+            <img src="pictures/phone.png" class="phone-image">
+        </div>
+        <!--Interactive images, hovering over them causes images and caption to increase in size gradually-->
+        <div class = "hover-image-future">
+            <img src="pictures/future.jpg" class="logo-image">
+        </div>
+         <div class="hover-text-future">
+            <h4>FUTURE</h4>
+        </div>
+
+        <div class="hover-image-gunna">
+            <img src="pictures/gunna.jpg" class="logo-image">
+        </div>
+        <div class="hover-text-gunna">
+            <h4>GUNNA</h4>
+        </div>
+
+        <div class="cartipic">
+            <img src="pictures/carti.jpg" class="logo-image">
+        </div>
+        <div class="cartipic-text">
+            <h4>PLAYBOI CARTI</h4>
+        </div>
+        <!--End of interactive images-->
+        <div class ="concert">
+            <img src="pictures/concert.jpg" class="logo-image">
+        </div>
+
+        <div class="preview">
+            <img src="pictures/previewmayhem.png" class="logo-image">
+        </div>
+
+        <a href="index.html" class="circlelogo"> <!--Clickable logo that sends client to the homepage (index.html)-->
+           <img src="pictures/musicfest2025.png" class="logo-image">
+        </a>
+
+    </header>
+
+    <nav>
+        <div class="dot-menu" id="dotMenu"> <!--Dropdown bar menu that allows navigation to different html pages-->
+            <img src="pictures/3lines.png" class="dot-menu-image" id="dotToggle" role="button" aria-label="Open menu" tabindex="0">
+            <div class="dropdown" id="dotDropdown" aria-hidden="true">
+                <a href="index.html">Home</a>
+                <a href="lineup.html">Lineup</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="schedule.html">Schedule</a>
+            </div>
+        </div>
+    </nav>
+    
+    <footer style="font-size: 12px"> <!--Copyright-->
+        &copy; 2025 MusicFest. All rights reserved.
+    </footer>
+    <div class="top-footer"> <!--Used purely for cinematic effect-->
+        <p>MusicFest 2025 | Mayhem</p>
+    </div>
+
+    <script src="dot-menu.js"></script> <!--Javascript file used for the functionality of the dropdown bar menu-->
+</body>
+</html>

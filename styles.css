@@ -1,0 +1,739 @@
+/*Custom font family */
+@font-face {
+        font-family: 'iammusic';
+        src: url('other/IAmMusic-Regular.ttf-_4_.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+/*Body that wraps an entire website together*/
+        body {
+            position: relative;
+            font-family: 'Anton', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+/*Black box at the top of website page*/
+        .top-footer {
+            background-color: #000;
+            color: #fff;
+            z-index: 9999;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;        
+            font-size: 12px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* Header section container for all page content */
+        header {
+            position: relative;
+            text-align: center;
+            margin-top: 20vh;
+        }
+
+        /* Main page title - MusicFest */
+        h1 {
+            font-size: 4.9vw;
+            font-family: 'iammusic';
+            font-weight: normal;  
+            position: absolute;   
+            top: 60vh;       
+            left: 12vw;        
+            z-index: 2;
+            text-transform: uppercase;
+            color: #000;
+            margin: 0;
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+
+
+        }
+
+        /* Year subtitle - 2025 */
+        h2 {
+            font-size: 2vw;
+            margin: 0;
+            font-family: 'impact', sans-serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            position: absolute;
+            top: 56vh;  
+            left: 48vw;
+            transform: scaleX(1.5);
+            color: #000;
+            z-index: 2;
+        }
+
+        /* Artist captions that appear on hover */
+        figcaption{
+            font-size: 1.5vw;
+            margin: 0;
+            font-family: 'impact`, sans-serif';
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            position: relative;
+            transform: scaleX(1.2);
+            transition: all 0.9s ease;
+            color: #000;
+            z-index: 2;
+        }
+
+        /* Hover effect for figcaption - changes color and scales */
+        figcaption:hover{
+            color: #fff;
+            text-shadow: 0 0 5px #000, 0 0 10px #fff, 0 0 15px #fff;
+            transform: scale(1.4);
+            transition: all 0.5s ease;
+        }
+
+        h5 {
+            font-size: 1vw;
+            margin: 0;
+            font-family: 'iammusic';
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            position: absolute;
+            top: 11vh;  
+            left: 71vw;
+            transform: scaleX(1.2);
+            color: #000;
+        }
+
+        h6{
+            font-size: 0.6vw;
+            margin: 0;
+            font-family: 'impact', sans-serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            position: absolute;
+            top: 2vh;  
+            right: 85vw;
+            transform: scale(1.7);
+            color: #000;
+        }
+
+        h7{
+            font-size: 1vw;
+            margin: 0;
+            font-family: 'impact', sans-serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            position: absolute;
+            top: 5vh;  
+            left: 5vw;
+            transform: scaleX(1.2);
+            color: #000;
+        }
+
+        /* Event tagline section with features */
+        .list{
+            font-size: 1vw;
+            margin: 0;
+            font-family: 'impact', sans-serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            position: absolute;
+            top: 10vh;  
+            left: 5vw;
+            transform: scaleX(1.2);
+            color: #000;
+        }
+        /* Footer at bottom of page */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 9999;
+        }
+
+
+        /* Schedule table styling with gradient background */
+        table{
+            position: relative;
+            left: 5%;
+            width: 90%;
+            height: 100%;
+            max-width: 1400px;
+            background: linear-gradient(to right, #585555, #16161656);
+            border-collapse: collapse;
+            border: 10px solid #363636;
+            box-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 15px #000;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 1.5vw;
+            z-index: 2;
+            opacity: 0.1;
+            transition: all 0.5s ease;
+            margin-top: -50px;
+        }
+
+
+        /* Table header and data cells border styling */
+        th, td{
+            border: 1px solid #000;
+            padding: 12px 16px;
+            text-align: center;
+
+        }
+
+        /* Table data cell styling with semi-transparent background */
+        td{
+            background-color: #ffffff0e;
+            color: #000;
+            text-align: center;
+            transition: all 0.5s ease;
+        }
+
+        /* Table caption title styling */
+        caption{
+            caption-side: top;
+            font-size: 1.5vw;
+            margin: 0;
+            font-family: 'iammusic';
+            text-shadow: 0 0 5px #fff, 0 0
+            10px #000, 0 0 15px #000;
+            color: #000;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Table hover effect - scales up and increases opacity */
+        caption:hover, table:hover,thead:hover, td:hover, tbody:hover, tfoot:hover {
+            transform: scale(1.05);
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+        /* Semi-transparent info box with description */
+        .solid-box {
+            position: absolute;
+            top: 58vh;
+            right: 13vw;
+            background-color: #ffffff0e;
+            width: 25vw;
+            height: 15vh;
+            border-radius: 15px;
+            color: #fff;
+            padding: 15px;
+            font-size: 0.8vw;
+            z-index: 2;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+            box-shadow: 0 0 5px #fff, 0 0 10px #ffffff66, 0 0 15px #000;
+            opacity: 0.5;
+            transition: all 0.5s ease;
+        }
+        .solid-box:hover{
+            opacity: 1.5;
+            z-index: 99;
+        }
+
+        /* Fade overlay gradient from transparent to black */
+        .topfade-solid-box {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            width: 100%;
+            height: 275%;
+            background: linear-gradient(transparent, #000, #000);
+            z-index: 1;
+        }
+
+        .topfade-solid-box:hover {
+            opacity: 1;
+        }
+        /* Background image with brightness filter */
+        .bg-image { 
+            display: block;    
+            width: 100vh;
+            height: auto;
+            transform: scale(3,3);
+            filter: brightness(0.5);
+            transition: filter 0.5s ease;
+        }
+
+        .bg-image:hover{
+            filter: brightness(0.8);
+            transition: filter 0.5s ease
+        }
+
+        /* Gunna artist image container - shows on hover */
+        .hover-image-gunna {
+            position: absolute;
+            bottom: 20vh;           
+            left: 60vw;            
+            width: 45vh;
+            border-radius: 15px;        
+            opacity: 0.8;    
+            z-index: 2;   
+            transition: all 0.5s ease;
+            transform: scale(1.6);  
+        }
+
+        /* Gunna image styling */
+        .hover-image-gunna img {
+            width: 100%;
+            height: auto;
+            border: 8px double gray;   
+            box-shadow: 0 0 5px #fff, 0 0 10px #777F50, 0 0 15px #000;
+        }
+
+        
+        /* Gunna hover effect - scales up and increases opacity */
+        .hover-image-gunna:hover {
+            transform: scale(2);
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* Gunna artist name label */
+        .hover-text-gunna {
+            position: absolute;
+            top: 41vh;
+            left: 79vw;
+            font-size: 2vw;
+            font-family: 'iammusic';
+            color: #ffffffa7;
+            opacity: 0.8;
+            z-index: 2;
+            transition: all 0.5s ease;
+            
+            text-shadow: 0 0 5px #000, 0 0 10px #777F50, 0 0 15px #000;
+        }
+
+        /* Gunna name hover effect - becomes visible and scales */
+        .hover-image-gunna:hover + .hover-text-gunna {
+            opacity: 1;
+            transform: translateX(-50%) scale(1.1);
+            z-index: 10
+        }
+
+        /* Future artist image container - shows on hover */
+        .hover-image-future {
+            position: absolute;
+            border-radius: 50px;
+            bottom: 30vh;           
+            left: 40vw;            
+            width: 40vh;          
+            opacity: 0.5;         
+            transition: all 0.5s ease;
+            transform: scale(1.6);   
+        }
+
+        /* Future image styling */
+        .hover-image-future img {
+            width: 100%;
+            height: auto;
+            border: 8px double gray;  
+            box-shadow: 0 0 5px #fff, 0 0 10px #BCC1D7, 0 0 15px #000;
+        }
+
+        
+        /* Future hover effect - scales up and increases opacity */
+        .hover-image-future:hover {
+            transform: scale(2);
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* Future artist name label */
+        .hover-text-future {
+            position: absolute;
+            top: 30vh;
+            left: 54vw;
+            font-size: 2vw; 
+            font-family: 'iammusic';
+            color: #ffffffa7;
+            opacity: 0.5;
+            transition: all 0.5s ease;
+            text-shadow: 0 0 5px #000, 0 0 10px #777F50, 0 0 15px #000;
+        }
+
+        /* Future name hover effect - becomes visible and scales */
+        .hover-image-future:hover + .hover-text-future{
+            opacity: 1;
+            transform: translateX(-50%) scale(1.1);
+            z-index: 10;
+        }
+
+        /* Carti artist image container */
+        .cartipic, .cartipic2 {
+            position: absolute;
+            top: 157%;
+            left: 4%;
+            width: 18vw;            
+            max-width: 320px;        
+            min-width: 160px;      
+            height: auto;
+            transition: transform 0.4s ease;
+            z-index: 4;
+            transform: scale(0.5);
+        }
+        /* Carti2 image styling */
+        .cartipic2 img{
+            width: 100%;
+            height: auto;
+            border: 3px double gray;  
+            box-shadow: 0 0 5px #fff, 0 0 10px #BCC1D7, 0 0 15px #000
+        }
+        /* Carti artist name label */
+        .cartipic-text{
+            position: absolute;
+            top: 305%;
+            left: 25%;
+            font-size: 0.85vw; 
+            font-family: 'iammusic';
+            color: #ffffffa7;
+            transition: all 0.5s ease;
+            text-shadow: 0 0 5px #000, 0 0 10px #a7a7a75b, 0 0 15px #000;
+            z-index: 4;
+        }
+        /* Carti hover effect - scales up */
+        .cartipic:hover{
+            transform: scale(0.6);
+            transition: all 0.5s ease;
+        }
+        /* Carti name hover effect - becomes visible and scales */
+        .cartipic:hover + .cartipic-text{
+            transform: translateX(-30%) scale(1.2);
+            transition: all 0.5s ease;
+        }
+
+        /* Concert image display */
+        .concert {
+            position: absolute;
+            top: 215%;
+            right: 42%;
+            width: 18vw;
+            max-width: 320px;
+            min-width: 160px;
+            height: auto;
+            border-radius: 15px;
+            z-index: 4;
+            transform: scale(0.5);
+        }
+
+        /* Preview image display */
+        .preview {
+            position: absolute;
+            top: 185%;
+            left: 37%;
+            width: 16vw;
+            max-width: 280px;
+            min-width: 180px;
+            border-radius: 15px;
+            z-index: 4;
+            transform: scale(0.35);
+        }
+
+        /* Circular logo link in header */
+        .circlelogo {
+            position: fixed;
+            bottom: 87vh;
+            left: 48.3vw;
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            background-color: #474646bf;
+            overflow: hidden;
+            z-index: 11;
+            box-shadow: 0 0 5px #474646bf, 0 0 10px #000, 0 0 15px #474646bf;
+            filter: brightness(0.3);
+            transition: filter 0.5s ease;
+        }
+
+        /* 21 Savage artist image container */
+        .savage{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            width: 18vw;            
+            max-width: 320px;        
+            min-width: 160px;      
+            height: auto;
+            transition: transform 0.4s ease;
+            z-index: 1;
+            opacity: 0.4;
+            transform: scale(2.7);
+        }
+
+        /* 21 Savage image styling */
+        .savage img{
+            width: 100%;
+            height: auto;
+            border: 3px double gray;  
+            box-shadow: 0 0 5px #fff, 0 0 10px #BCC1D7, 0 0 15px #000
+        }
+
+        /* 21 Savage hover effect - scales up */
+        .savage:hover{
+            transform: scale(3);
+            transition: all 0.5s ease;
+        }
+
+        /* Drake artist image container - plays audio on hover */
+        .drake{
+            position: absolute;
+            top: 125%;
+            left: 60%;
+            width: 18vw;            
+            max-width: 320px;        
+            min-width: 160px;      
+            height: auto;
+            transition: transform 0.4s ease;
+            z-index: 1;
+            opacity: 0.4;
+            transform: scale(2.7);
+        }
+
+        /* Drake image styling */
+        .drake img{
+            width: 100%;
+            height: auto;
+            border: 3px double gray;  
+            box-shadow: 0 0 5px #fff, 0 0 10px #BCC1D7, 0 0 15px #000
+        }
+
+        /* Drake hover effect - scales up */
+        .drake:hover{
+            transform: scale(3);
+            transition: all 0.5s ease;
+        }
+        
+        /* Autumn artist image container */
+        .autumn{
+            position: absolute;
+            top: 300%;
+            left: 70%;
+            width: 18vw;            
+            max-width: 320px;        
+            min-width: 160px;      
+            height: auto;
+            transition: transform 0.4s ease;
+            z-index: 1;
+            opacity: 0.4;
+            transform: scale(2.7);
+        }
+
+        /* Autumn image styling */
+        .autumn img{
+            width: 100%;
+            height: auto;
+            border: 3px double gray;  
+            box-shadow: 0 0 5px #fff, 0 0 10px #BCC1D7, 0 0 15px #000
+        }
+
+        /* Autumn hover effect - scales up */
+        .autumn:hover{
+            transform: scale(3);
+            transition: all 0.5s ease;
+        }
+
+        /* Logo image inside circular container */
+        .circlelogo .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+            z-index: 9999
+        }
+
+        /* Circular logo hover effect - brightens */
+        .circlelogo:hover {
+            filter: brightness(1);
+            transition: filter 0.5s ease;
+        }
+
+        /* Navigation menu container - fixed position top right */
+        .dot-menu {
+            position: fixed;
+            top: 65px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Menu icon image - clickable button */
+        .dot-menu-image {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        /* Menu icon hover effect - scales up */
+        .dot-menu-image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Empty dot styling - not actively used */
+        .dot-menu .dot {
+            width: 28px;
+            height: 28px;
+            background-color: #000;
+            
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+        }
+
+        /* Dropdown menu - hidden by default, shown on active */
+        .dot-menu .dropdown {
+            display: block;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background: linear-gradient(transparent, grey, grey);
+            box-shadow: 0 2px 5px grey;
+            border-radius: 4px;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            pointer-events: none;
+        }
+
+        /* Dropdown link styling */
+        .dot-menu .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            color: #000;
+            font-family: 'impact', sans-serif;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Dropdown link hover effect - background color change */
+        .dot-menu .dropdown a:hover {
+            background-color: #f4f4f4;
+            transition: all 0.3s ease;
+        }
+
+        /* Dropdown shown when menu is active - fade in with opacity and visibility */
+        .dot-menu.active .dropdown {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        /* Phone image display on page */
+        .phone {
+            position: absolute;
+            top: 30vh;           
+            left: 5vw;            
+            width: 30vh;
+            border-radius: 15px;        
+            opacity: 0.7;       
+            transition: all 1.5s ease;
+            z-index: 0;
+            filter: drop-shadow(0 0 10px #ffffffa0);
+        }
+
+        /* Phone hover effect - increases opacity */
+        .phone:hover {
+            opacity: 1;
+            
+        }
+
+        /* Tickets page form container */
+        .tickets-container {
+            position: absolute;
+            top: -20vh;
+            right: 12%;
+            max-width: 1000px;
+            margin: 120px auto;
+            padding: 40px;
+            color: white;
+            z-index: 99
+        }
+
+        /* Article/section styling */
+        article {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+        }
+
+        /* Figure element - semantic wrapper for images/captions */
+        figure {
+            margin: 0;
+        }
+
+        /* Form element wrapper */
+        form {
+            margin-top: 40px;
+        }
+
+        /* Form label styling */
+        label {
+            display: block;
+            margin-top: 15px;
+            font-family: 'impact', sans-serif;
+        }
+
+        /* Form input, select, and textarea fields */
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        /* Textarea field - no resize */
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        /* Checkbox group wrapper */
+        .checkbox-group {
+            margin-top: 15px;
+        }
+
+        /* Form buttons container - flexbox layout */
+        .form-buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Button base styling */
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Submit button - gradient dark background */
+        .submit-btn {
+            background: #00ff99;
+            color: black;
+        }
+
+        /* Reset button - red background */
+        .reset-btn {
+            background: #ff4444;
+            color: white;
+        }
+
+        /* Form validation error message styling - red text */
+        .error {
+            color: #ff4d4d;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* Success message styling - centered white text */
+        .success {
+            color: #00ff99;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 18px;
+        }

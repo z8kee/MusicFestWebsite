@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Title of home page-->
+    <title>
+        Tickets
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Name of external style sheet-->
+    </head>
+    <body>
+
+    <header>
+        <img src="pictures/black-texture.jpg" class="bg-image"> <!--Image for bg, styled by styles.css-->
+        <h1 style="top: -14vh; left: -10vh; transform: scale(0.4);">MusicFest</h1>
+        
+        <a href="index.html" class="circlelogo"> <!--Clickable logo that send client to home page (index.html)-->
+            <img src="pictures/musicfest2025.png" class="logo-image">   
+        </a>
+
+        <div class="topfade-solid-box" style="top: 0vh; height: 400%; z-index:2"></div> <!--Box with black gradient, scrolling down page will make it darker-->
+    </header>
+
+    <nav>
+        <div class="dot-menu" id="dotMenu"> <!--Dropdown bar menu that allows client tonavigate to different html pages-->
+            <img src="pictures/3lines.png" class="dot-menu-image" id="dotToggle" role="button">
+            <div class="dropdown" id="dotDropdown">
+                <a href="index.html">Home</a>
+                <a href="lineup.html">Lineup</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="schedule.html">Schedule</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main container used for tickets section-->
+    <main class="tickets-container"> 
+
+        
+        <article style="z-index: 9;">
+            
+            <!--Figure contains the musicfest image and caption-->
+            <figure>
+                <!--Festival ticket image-->
+                <img src="pictures/musicfest2025.png" 
+                    alt="MusicFest Tickets" 
+                    style="width:100%; border-radius:10px;">
+                
+                <!--Caption displayed near the image-->
+                <figcaption style="right: -20%">
+                    Secure your place at MusicFest 2025.
+                </figcaption>
+            </figure>
+
+            <!-- description for tickets image-->
+            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                Choose your ticket, complete the booking form, and get ready for the biggest music event of the year.
+            </p>
+
+        </article>
+
+        
+        <section>
+
+            <!--Heading for the ticket booking section-->
+            <h2 style="font-family: iammusic; font-size: 13px; left: 41%; top: 20vh">
+                Book Your Tickets
+            </h2>
+
+            <!--Ticket booking form-->
+            <form id="ticketForm" novalidate>
+
+                <!--Full Name input-->
+                <label>Full Name
+                    <input type="text" id="name">
+                    <!--Error message for name validation-->
+                    <div class="error" id="nameError"></div>
+                </label>
+
+                <!--Email input-->
+                <label>Email Address
+                    <input type="email" id="email">
+                    <!--Error message for email validation-->
+                    <div class="error" id="emailError"></div>
+                </label>
+
+                <!--Phone number input-->
+                <label>Phone Number
+                    <input type="tel" id="phone">
+                    <!--Error message for phone validation-->
+                    <div class="error" id="phoneError"></div>
+                </label>
+
+                <!--Number of tickets input-->
+                <label>Number of Tickets
+                    <input type="number" id="tickets" min="1" max="10">
+                    <!--Error message for ticket count-->
+                    <div class="error" id="ticketsError"></div>
+                </label>
+
+                <!--Ticket type dropdown-->
+                <label>Ticket Type
+                    <select id="ticketType">
+                        <option value="">Select Ticket Type</option>
+                        <option>General Admission</option>
+                        <option>VIP</option>
+                        <option>Premium</option>
+                    </select>
+                    <!--Error message for ticket type-->
+                    <div class="error" id="ticketTypeError"></div>
+                </label>
+
+                <!--Dropdown to artists to be selected-->
+                <label>Who do you want to see?
+                    <select id="artist">
+                        <option value="">Select Artist</option>
+                        <option>Gunna and Carti</option>
+                        <option>Future and Autumn!</option>
+                        <option>21 Savage and Drake</option>
+                    </select>
+                    <!--Error message for artist selection-->
+                    <div class="error" id="artistError"></div>
+                </label>
+
+                <!--Payment method dropdown-->
+                <label>Payment Method
+                    <select id="payment">
+                        <option value="">Select Payment Method</option>
+                        <option>Credit Card</option>
+                        <option>Debit Card</option>
+                        <option>PayPal</option>
+                    </select>
+                    <!--Error message for payment method-->
+                    <div class="error" id="paymentError"></div>
+                </label>
+
+                <!--Optional text area for special requirements-->
+                <label>Special Requirements
+                    <textarea id="requirements"></textarea>
+                </label>
+
+                <!--Terms & Conditions checkbox-->
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="terms"> 
+                        I agree to the Terms & Conditions
+                    </label>
+                    <!--Error message if terms not accepted-->
+                    <div class="error" id="termsError"></div>
+                </div>
+
+                <!--Submit button-->
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+
+                <!--Success message after valid submission-->
+                <div class="success" id="successMessage"></div>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        &copy; MusicFest 2025. All rights reserved.
+    </footer>
+    <script src="dot-menu.js"></script>
+    <script src="tickets.js"></script>
+    <div class="top-footer">
+        <p>MusicFest | Mayhem</p>
+    </div>
+</html>

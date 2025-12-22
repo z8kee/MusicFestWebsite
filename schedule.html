@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Title of home page-->
+    <title>
+        Schedule
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Name of external style sheet-->
+</head>
+<body>
+    <header>
+        <img src="pictures/black-texture.jpg" class="bg-image"> <!--Image for bg, styled by styles.css-->
+
+        <h1 style="top: -14vh; left: -10vh; transform: scale(0.4); ">MusicFest</h1> <!--Changed the formatting for h1 to position it in the top left corner temporarily.-->
+        
+        <a href ="index.html" class="circlelogo"><!--Clickable logo that sends client to homepage (index.html)-->
+            <img src="pictures/musicfest2025.png" class="logo-image">   
+        </a>
+
+        <div class="topfade-solid-box" style="top: -10vh; height: 200%"></div> <!--Used for effect, allows for a black gradient to flow as you scroll down the page-->
+
+        <div class="savage"> <!--Pic of 21 Savage-->
+            <img src="pictures/21savage.jpg" class="logo-image">
+        </div>
+
+        <div class="drake"> <!--Pic of Drake-->
+            <img src="pictures/draco.jpg" class="logo-image">
+        </div>
+
+        <h5 style="top: 20vh">DONT BE LATE.</h5>
+        <h5 style="top: 130vh; left:10%; color: #fff; z-index: 8">YOU'LL MISS THE <em>mayhem</em>.</h5>
+
+        <table> <!--4x4 table with caption, headers, and data-->
+            <caption>MusicFest 2025 Schedule</caption>
+            <thead> <!--Header, formatted into columns-->
+                <tr>
+                    <th scope = "col">Schedule</th>
+                    <th scope = "col">Day 1</th>
+                    <th scope = "col">Day 2</th>
+                    <th scope = "col">Day 3</th>
+                </tr>
+            </thead>
+            <tbody> <!--Body of table-->
+                <tr>
+                    <th scope = 'row'>Artist Name</th>
+                    <td>Gunna && Carti</td>
+                    <td>Future && Autumn</td>
+                    <td>21 Savage && Drake</td>
+                </tr>
+
+                <tr>
+                    <th scope = 'row'>Time</th>
+                    <td>1:00 PM - 4:00 PM || 5:00PM - 8:00PM</td>
+                    <td>10:00 AM - 12:00 PM || 2:00PM - 4:00PM</td>
+                    <td>6:00 PM - 8:00 PM || 9:00PM - 11:00PM</td>
+                </tr>
+
+                <tr>
+                    <th scope = 'row'>Stage</th>
+                    <td>Sir Bob Stage || Ken Charles Stage</td>
+                    <td>Ken Charles Stage || Zeke Stage</td>
+                    <td>Yves Saint Stage || Mayhem Stage</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </header>
+
+    <nav> 
+        <div class="dot-menu" id="dotMenu"> <!--Dropdown bar menu that allows client to travel to different html pages-->
+            <img src="pictures/3lines.png" class="dot-menu-image" id="dotToggle" role="button" aria-label="Open menu" tabindex="0">
+            <div class="dropdown" id="dotDropdown" aria-hidden="true">
+                <a href="index.html">Home</a>
+                <a href="lineup.html">Lineup</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="schedule.html">Schedule</a>
+            </div>
+        </div>
+    </nav>
+
+    <footer>
+        &copy; MusicFest 2025. All rights reserved.
+    </footer>
+    <div class="top-footer">
+        <p>MusicFest 2025 | Mayhem</p>
+    </div>
+
+    <script src="dot-menu.js"></script>  
+</body>
+</html>

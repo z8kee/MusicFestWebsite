@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Title of homepage-->
+    <title>
+        Lineup
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Name of external style sheet-->
+</head>
+<body>
+    <header>
+        <img src="pictures/black-texture.jpg" class="bg-image"> <!--Image for bg, styled by styles.css-->
+
+        <h1 style="top: -14vh; left: -10vh; transform: scale(0.4); ">MusicFest</h1> <!--Logo to be put at top left corner-->
+        <h5 style="top: 60vh; font-size: 30px; left: 45vw">LINEUP</h5> <!--Name of page situated at the middle of the page-->
+        <h6>Click Images to Play Music</h6>
+
+        <a href ="index.html" class="circlelogo"> <!--Clickable logo that allows client to travel to home page (index.html)-->
+            <img src="pictures/musicfest2025.png" class="logo-image">   
+        </a>
+
+        <div class="topfade-solid-box" style="top: -35vh; height: 400%"></div> <!--Allows for black gradient to flow as you scroll down the page-->
+        <!------------------------Pictures of artists with brief biography, hover over pictures to play their audio------------------------->
+        <figure> 
+            <div class="hover-image-future" style="top:10vh; left: 7vw; transform: scale(1.3); opacity: 1; z-index: 99; filter: saturate(0)">
+                <img src="pictures/future.jpg" class="logo-image">
+                <audio id="futureAudio" style = "display:none;">
+                    <source src="audios/Future_-_Solo_Official_Audio_128kbps_24004_cut.mp3" type="audio/mp3">
+                </audio>
+                <figcaption style="font-size: 15px">Future: Atlanta rapper, prolific trap innovator, Auto-Tuned melodies, influential albums like DS2 and Hndrxx.</figcaption>
+            </div>
+        </figure>
+
+        <figure>
+            <div class="hover-image-gunna" style="top: 0vh; left: 38vw; transform: scale(1); z-index: 2">
+                <img src="pictures/gunna2.jpg" class="logo-image">
+                <audio id="gunnaAudio" style = "display:none;">
+                    <source src="audios/Gunna_-_Sold_Out_Dates_ft._Lil_Baby_Official_Audio_128kbps_109876_cut.mp3" type="audio/mp3">
+                </audio>
+                <figcaption style="font-size: 15px">Gunna: Georgia rapper, melodic trap flow, “drip” aesthetic, breakout with Lil Baby collab Drip Harder.</figcaption>
+            </div>
+        </figure>
+        
+        <figure>
+            <div class="cartipic2" style="top: 4vh; left: 73vw; transform: scale(1.2)">
+                <img src="pictures/carti2.webp" class="logo-image">
+                <audio id="cartiAudio" style = "display:none;">
+                    <source src="audios/Playboi_Carti_-_CRANK_Official_Audio_128kbps_179085_cut.mp3" type="audio/mp3">
+                </audio>
+                <figcaption style="font-size: 15px">Carti: Atlanta rapper, avant-garde style, fashion icon, popularized rage sound with Whole Lotta Red.</figcaption>
+            </div>
+        </figure>
+
+        <figure>
+            <div class='savage' style="top: 85vh; left: 25vh; transform: scale(2.1)">
+                <img src="pictures/21savage.jpg" class="logo-image">
+                <audio id="savageAudio" style = "display:none;">
+                    <source src="audios/21_Savage_x_Metro_Boomin_-_Runnin_Official_Audio_128kbps_10560_cut.mp3" type="audio/mp3">
+                </audio>
+                <figcaption style="font-size: 12px">21 Savage: London-born, Atlanta-raised rapper, rose with Savage Mode, known for gritty trap storytelling.</figcaption>
+            </div>
+        </figure>
+
+        <figure>
+            <div class="drake" style="transform: scale(2.05); top: 85vh; left: 115vh;">
+                <img src="pictures/draco.jpg" class="logo-image">
+                <audio id="drakeAudio" style="display:none;">
+                    <source src="audios/Drake_-_Champagne_Poetry_Audio_128kbps_389319_cut.mp3" type="audio/mp3">
+                </audio>
+                <figcaption style="font-size: 12px">Drake: Toronto-born rapper/singer, global superstar, blends rap and R&B, breakthrough with So Far Gone.</figcaption>
+            </div>
+        </figure>
+
+        <figure>
+            <div class="autumn" style="top: 160vh; left: 70vh; transform: scale(1.8)">
+                <img src="pictures/autumn.jpg" class="logo-image">
+                <audio id="autumnAudio" style = "display:none;">
+                    <source src="audios/Still_the_Same_2_128kbps_2294715_cut.mp3" type="audio/mp3">
+                </audio>
+                <figcaption style="font-size: 12px">Autumn!: Louisiana rapper/producer, pioneer of pluggnb, blending melodic beats with underground energy.</figcaption>
+            </div>
+        </figure>
+    <!----------------------------------------End of pictures with brief biography------------------------------------>
+    </header>
+
+    <nav> <!--Dropdown bar menu that allows client to travel to different html pages-->
+        <div class="dot-menu" id="dotMenu">
+            <img src="pictures/3lines.png" class="dot-menu-image" id="dotToggle" role="button" aria-label="Open menu" tabindex="0">
+            <div class="dropdown" id="dotDropdown" aria-hidden="true">
+                <a href="index.html">Home</a>
+                <a href="lineup.html">Lineup</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="schedule.html">Schedule</a>
+            </div>
+        </div>
+    </nav>
+
+    <footer>
+        &copy; MusicFest 2025. All rights reserved.
+    </footer>
+    <div class="top-footer">
+        <p>MusicFest | Mayhem</p>
+    </div>
+    <!--Javascript files used for functionality of audio manager and dropdown bar menu-->
+    <script src="audio.js"></script>
+    <script src="dot-menu.js"></script>
+
+</body>
+</html>
